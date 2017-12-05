@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<!-- Start of html -->
+<html>
+<!-- linking css to html -->
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<!-- Start of head, title and internaL styling -->
+<head>
+  <style>
+  /*Aside div content list item no margin*/
+
+  .container {
+      position: relative;
+      min-width: 25%;
+      float: left;
+  }
+
+  .Navbar {
+    height: 390px;
+  }
+
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+  }
+
+  .container:hover .image {
+    opacity: 0.3;
+  }
+
+  .container:hover .middle {
+    opacity: 1;
+  }
+
+  .text {
+    background-color: #acced7;
+    border: grey solid 1px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 16px 32px;
+  }
+
+  p {
+    margin: 2px;
+    max-width: inherit;
+    padding: 0;
+  }
+
+  h2 {
+    margin-top: 0.2%;
+  }
+
+  .Activities img {
+    display: block;
+    float: left;
+    margin: 0.3%;
+  }
+
+  </style>
+
+  <title>Nurturing Nature</title>
+</head>
+<!-- End of head -->
+<!-- Start of html body -->
+<body>
+<!-- grid div start for position and placing -->
+  <div id="Grid">
+<!-- Start of Navbar-->
+    <div class="Navbar" id="Navbar">
+        <div class="Top">
+          <h1>Nurturing Nature</h1>
+        </div>
+        <ul class="NavbarInfo1">
+          <li><a href="Home.html" title="index" target="_self">Home</a></li>
+          <li class="active"><a href="gallery.html" title="Gallery" target="_self">Gallery</a></li>
+          <li><a href="contact.html" title="Contact" target="_self">Contact Me</a></li>
+        </ul>
+        <div class="NavbarInfo2">
+          <div class="container">
+            <img src="Images\Camping\Camping.jpg" alt="Camping" class="image">
+            <div class="middle">
+              <div class="text"><a href="#Camping" title="Camping" target="_self">Camping</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <img src="Images\Fishing\Fishing.jpg" alt="Fishing" class="image" style="max-height:259px">
+            <div class="middle">
+              <div class="text"><a href="#Fishing" title="Fishing" target="_self">Fishing</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <img src="Images\Hiking\Hiking.png" alt="Hiking" class="image" style="max-height:259px">
+            <div class="middle">
+              <div class="text"><a href="#Hiking" title="Hiking" target="_self">Hiking</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <img src="Images\Rock Climbing\RC.jpg" alt="RockC" class="image" style="max-height:259px">
+            <div class="middle">
+              <div class="text"><a href="#RockClimbing" title="Rock Climbing" target="_self">Rock Climbing</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+<!-- End of Navbar -->
+<!-- Start of main div holding Activities and aside -->
+    <div class="Main">
+
+      <div class="Activities" style="border: 1px solid grey;">
+        <div id="Activities">
+          <h2 id="Camping">Camping</h2>
+          <div class="Camping">
+            <div>
+              <img class="photo" src="Images/Camping/pexels-photo-207324.jpeg" alt="3" width="49%" height="196px">
+              <img class="photo" src="Images/Camping/pexels-photo-221436.jpeg" alt="4" width="49%" height="196px">
+            </div>
+
+            <div style="max-width: inherit;">
+              <img class="photo" src="Images/Camping/tent-camp-night-star-45241.jpeg" alt="7" width="49%" height="196px">
+              <img class="photo" src="Images/Camping/wood-man-vintage-old.jpg" alt="8" width="49%" height="196px">
+            </div>
+          </div>
+        </div>
+
+        <div id="Activities">
+          <h2 id="Fishing">Fishing</h2>
+          <div class="fishing">
+            <div>
+              <img class="photo" src="Images/Fishing/pexels-photo-102730.jpeg" alt="3" width="49%" height="196px">
+              <img class="photo" src="Images/Fishing/pexels-photo-294674.jpeg" alt="4" width="49%" height="196px">
+            </div>
+            <div style="max-width: inherit;">
+              <img class="photo" src="Images/Fishing/pexels-photo-319934.jpeg" alt="5" width="49%" height="196px">
+              <img class="photo" src="Images/Fishing/pexels-photo-386003.jpeg" alt="6" width="49%" height="196px">
+            </div>
+          </div>
+        </div>
+
+        <div id="Activities">
+          <h2 id="Hiking">Hiking</h2>
+          <div class="hiking">
+            <div >
+              <img class="photo" src="Images/Hiking/pexels-photo-117843.jpeg" alt="1" width="49%" height="196px">
+              <img class="photo" src="Images/Hiking/pexels-photo-130111.jpeg" alt="2" width="49%" height="196px">
+            </div>
+            <div style="max-width: inherit;">
+              <img class="photo" src="Images/Hiking/pexels-photo-211046.jpeg" alt="3" width="49%" height="196px">
+              <img class="photo" src="Images/Hiking/pexels-photo-323606.jpeg" alt="5" width="49%" height="196px">
+            </div>
+          </div>
+        </div>
+
+        <div id="Activities">
+          <h2 id="RockClimbing">Rock Climbing</h2>
+          <div class="rc">
+            <div >
+              <img class="photo" src="Images/Rock Climbing/pexels-photo-215305.jpeg" alt="3" width="49%" height="196px">
+              <img class="photo" src="Images/Rock Climbing/pexels-photo-303040.jpeg" alt="4" width="49%" height="196px">
+            </div>
+            <div style="max-width: inherit;">
+              <img class="photo" src="Images/Rock Climbing/pexels-photo-357891.jpeg" alt="5" width="49%" height="196px">
+              <img class="photo" src="Images/Rock Climbing/pexels-photo-372098.jpeg" alt="6" width="49%" height="196px">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="Extra">
+        <div id="side">
+          <h2>Shop for gear <img src="Images/Shop.png" height="6%" width="6%"></h2>
+            <p><a href="https://www.capeunionmart.co.za/" title="ClimbZa" target="_blank">Cape Union Mart</a><img src="Images/external.png" height="6%" width="6%"></p>
+            <p><a href="https://www.campandclimb.co.za/" title="ClimbZa" target="_blank">Camp and Climb</a><img src="Images/external.png" height="6%" width="6%"></p>
+            <p><a href="http://www.climbing.co.za/directory/climbing-shops-in-south-africa/" title="ClimbZa" target="_blank">Climbing Shops</a><img src="Images/external.png" height="6%" width="6%"></p>
+            <p><a href="https://www.outdoorwarehouse.co.za/" title="ClimbZa" target="_blank">Outdoor Warehouse</a><img src="Images/external.png" height="6%" width="6%"></p>
+        </div>
+
+        <div id="side">
+          <h2>More Locations <img src="Images/direction-icon-614x460.png" height="6%" width="6%"></h2>
+            <p><a href="https://www.sanparks.org/tourism/activities/hikes_walks_trails.php" title="SanParks" target="_blank">Hiking/walking trails</a><img src="Images/external.png" height="6%" width="6%"></p>
+            <p><a href="http://www.climbing.co.za/wiki/South_African_Climbing_Wiki" title="ClimbZa" target="_blank">Climbing/kloof Routes</a><img src="Images/external.png" height="6%" width="6%"></p>
+            <p><a href="http://www.climbing.co.za/directory/adventure-parks-in-south-africa/" title="ClimbZa" target="_blank">Adventure Parks</a><img src="Images/external.png" height="6%" width="6%"></p>
+        </div>
+
+        <div id="side">
+          <h2>Marcellaneous <img src="Images/circle-detail-more-icon-22.png" height="6%" width="6%"></h2>
+            <p><a href="http://www.climbing.co.za/directory/medical-services-for-climbers-physios-sports-massage-orthopeadic-specialists/" title="ClimbZa" target="_blank">Medical Specialist</a><img src="Images/external.png" height="6%" width="6%"></p>
+            <p><a href="http://www.climbing.co.za/directory/climbing-shoe-repairs-and-resolers-in-south-africa/" title="ClimbZa" target="_blank">Rock Climbing Shoe Repairs</a><img src="Images/external.png" height="6%" width="6%"></p>
+            <p><a href="https://www.climbing.co.za/shop/cat/guide-books/" title="ClimbZa" target="_blank">Guide Books</a><img src="Images/external.png" height="6%" width="6%"></p>
+            <p><a href="http://www.climbing.co.za/directory/climbing-gyms-in-south-africa/" title="ClimbZa" target="_blank">Climbing Gyms</a><img src="Images/external.png" height="6%" width="6%"></p>
+        </div>
+      </div>
+
+    </div>
+<!-- End of Main div -->
+<!-- Start of footer containing copywrite and Social icons -->
+    <footer>
+      <p style="float:Right">Megan Meyer &copy; Sep 2017</p>
+      <a href="#" title="Facebook" target="_blank"><img src="Images/FHex.png" height="40px" width="40px" style="float:left;"></a>
+      <a href="#" title="Twitter" target="_blank" ><img src="Images/THex.png" height="40px" width="40px" style="float:left;"></a>
+      <a href="#Grid" title="TopJump" target="_self" style=" margin-left:45%; float:left;" >TOP</a>
+    </footer>
+<!-- End of footer -->
+  </div>
+<!-- End of grid div -->
+</body>
+<!-- End of body element -->
+</html>
+<!-- html End -->

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- Start of html -->
+<html>
+<!-- linking css to html -->
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<!-- Start of head, title and internal styling -->
+<head>
+  <style>
+/*Start of main div styling background-color and text alignment*/
+  .Main {
+    text-align: center;
+    background-color: lightgrey;
+    height: 480px;
+    border: 1px solid grey;
+  }
+/*End of main div styling*/
+
+/*Start of form button size editing*/
+  #button {
+    width: 20em;
+    height: 2em;
+  }
+/*End of button styling*/
+  </style>
+
+  <title>Nurturing Nature</title>
+</head>
+<!-- End of head -->
+
+<body>
+
+  <div id="Grid">
+
+    <div class="Navbar">
+      <nav id="Navbar">
+      <div class="Top">
+      <h1>Nurturing Nature</h1>
+      </div>
+        <ul class="NavbarInfo1">
+          <li><a href="index.html" title="Home" target="_self">Home</a></li>
+          <li><a href="gallery.html" title="Gallery" target="_self">Gallery</a></li>
+          <li class="active"><a href="contact.html" title="Contact" target="_self">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="Main">
+      <form style="margin-left:20%">
+        Name: <br>
+        <input type="text" name="name" style="width: 30em;  height: 2em;"></input><br>
+        Email:<br>
+        <input type="email" name="email" style="width: 30em;  height: 2em;"></input><br>
+        Message Me:<br>
+        <textarea name="message" rows="20" cols="80"></textarea><br><br>
+        <input type="reset" value="Reset" id="button"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit" value="Send" id="button">
+      </form>
+    </div>
+
+    <footer>
+      <p style="float:Right">Megan Meyer &copy; Sep 2017</p>
+      <a href="#" title="Facebook" target="_blank"><img src="Images/FHex.png" height="40px" width="40px" style="float:left;"></a>
+      <a href="#" title="Twitter" target="_blank"><img src="Images/THex.png" height="40px" width="40px" style="float:left;"></a>
+    </footer>
+
+  </div>
+
+</body>
+
+</html>

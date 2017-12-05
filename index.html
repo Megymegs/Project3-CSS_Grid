@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<!-- Start of html -->
+<html>
+<!-- linking css to html -->
+<link rel="stylesheet" type="text/css" href="styles.css">
+<!-- Start of head, title and styling -->
+<head>
+  <style>
+
+  .container {
+      position: relative;
+      min-width: 25%;
+      float: left;
+  }
+
+  .Navbar {
+    height: 390px;
+  }
+
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+  }
+
+  .container:hover .image {
+    opacity: 0.3;
+  }
+
+  .container:hover .middle {
+    opacity: 1;
+  }
+
+  .text {
+    background-color: #acced7;
+    border: grey solid 1px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 16px 32px;
+  }
+
+  .Camping{
+  border: grey dotted 1px;
+}
+
+  .fishing{
+  border: grey dotted 1px;
+}
+
+  .hiking{
+  border: grey dotted 1px;
+}
+
+  .rc{
+  border: grey dotted 1px;
+}
+
+.fishing li:hover:not(.active) {
+  text-decoration: none;
+  box-shadow: none;
+  background-color: inherit;
+  cursor: default;
+}
+
+  </style>
+
+  <title>Nurturing Nature</title>
+</head>
+<!-- Start of body -->
+<body>
+<!-- Start of grid for content placement -->
+  <div id="Grid">
+    <div class="Navbar">
+      <nav id="Navbar">
+        <div class="Top">
+          <h1>Nurturing Nature</h1>
+        </div>
+        <ul class="NavbarInfo1">
+          <li class="active"><a href="index.html" title="Home" target="_self">Home</a></li>
+          <li><a href="gallery.html" title="Gallery" target="_self">Gallery</a></li>
+          <li><a href="contact.html" title="Contact" target="_self">Contact Me</a></li>
+        </ul>
+        <ul class="NavbarInfo2">
+
+          <div class="container">
+            <img src="Images\Camping\Camping.jpg" alt="Camping" class="image">
+            <div class="middle">
+              <div class="text"><a href="#TweedeTol" title="Camping" target="_self">Camping</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <img src="Images\Fishing\Fishing.jpg" alt="Fishing" class="image" style="max-height:259px">
+            <div class="middle">
+              <div class="text"><a href="#Fishing" title="Fishing" target="_self">Fishing</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <img src="Images\Hiking\Hiking.png" alt="Hiking" class="image" style="max-height:259px">
+            <div class="middle">
+              <div class="text"><a href="#Hiking" title="Hiking" target="_self">Hiking</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <img src="Images\Rock Climbing\RC.jpg" alt="RockC" class="image" style="max-height:259px">
+            <div class="middle">
+              <div class="text" style="text-align:center"><a href="#RockC" title="Rock Climbing" target="_self">Rock Climbing</a>
+              </div>
+            </div>
+          </div>
+
+        </ul>
+      </nav>
+    </div>
+
+
+<!-- Start of main div holding Activities and Aside -->
+    <div class="Main">
+    <!-- Start of Activities div with images, information and location -->
+      <div class="Activities" style="border: 1px solid grey;">
+          <div id="Activities">
+            <h2 id="TweedeTol">Camping</h2>
+            <div class="Camping">
+              <h3><a href="http://www.capenature.co.za/reserves/limietberg-nature-reserve/" title="Camp" target="_new">Tweede Tol Campsite</a></h3>
+              <p>The Tweede Tol camp and picnic site is located within the Limietberg Nature Reserve at the original tollgate of the beautiful Bainskloof Pass, built in 1853. The campsite has 20 standard sites, each with its own braai area. For visitors wanting something more private, there are also six fenced-off campsites, each with its own kitchen and bathroom. The campsite is suitable for caravans</p>
+              <br>
+              <table style="width:100%; text-align:center; table-layout:fixed">
+                <tr>
+                  <th colspan="3">Caping Rates</th>
+                </tr>
+                <tr colspan="2" style="width:48%">
+                  <th colspan="2" width="100%">Campsites (20 sites)</th>
+                  <th width="100%">Private Campsites (6 sites)</th>
+                </tr>
+                <tr  colspan="2" width="100%">
+                  <td colspan="2" width="100%">1-2 persons per night<br>Peak &nbsp; R360<br>Off-peak &nbsp; R160<br>Additional p/p/n &nbsp; R50 (max 6)</td>
+                  <td width="100%">1-6 persons per night<br>Peak &nbsp; R570<br>Off-peak &nbsp; R500</td>
+                </tr>
+                <tr>
+                  <th colspan="3">Conservation fee</th>
+                </tr>
+                <tr>
+                  <td width="35%">Adults &nbsp; R40</td>
+                  <td width="35%">Children &nbsp; R20</td>
+                  <td width="35%">Group-activities &nbsp; From R40</td>
+                </tr>
+              </table>
+              <p> For booking information please see <a href="http://www.capenature.co.za/reserves/limietberg-nature-reserve/" title="Camp" target="_new"><ins>Tweede Tol Campsite.</ins><img src="Images/external.png" height="2%" width="2%"></a></p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1692864.5694988212!2d19.044932!3d-34.034222!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd297affd9bae1621!2sHaweqwa+Nature+Reserve!5e0!3m2!1sen!2sus!4v1505642850025" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div id="Activities">
+            <h2 id="Fishing">Fishing</h2>
+            <div class="fishing" >
+              <h3 id="Tulbagh"><a href="http://www.capenature.co.za/reserves/limietberg-nature-reserve/" title="Camp" target="_new">Tulbagh</a></h3>
+              <p>The Witels is a mysterious river that runs through Tulbagh's southwestern side of the Hex River Mountains and joins the Dwars River that comes in from Ceres side to form the Breede River in Mitchell's Pass. The entire upper section is controlled by the University of Cape Town (UCT) Mountain & Ski Club and no fishing is allowed. The lower reaches flow through Ceres Municipal property and a state permit and Western Cape fishing license are required to fish this area.
+              </p>
+              <h3>Recreational permit fishing fees</h3>
+              <p>In order to access a fishing permit, you'll need to pay an application fee of R7. If your application is successful, you'll need to pay a fee for the issuing of your permit. The following fees, provided by the Department of Agriculture, Forestry and Fisheries (DAFF) apply for an annual permit:<br>
+                <ul>
+                  <li style="list-style-position: inside">Angling - R69</li>
+                </ul>"
+                You can also apply for a short term permit that is valid for 4 weeks:<br>
+                <ul>
+                  <li style="list-style-position: inside">Angling - R45</li>
+                </ul>
+              </p>
+              <p>For information on how to apply for a freshwater fishing permit, see <a href="https://www.westerncape.gov.za/service/fishing-rights-and-permits" title="Fishing" target="_new"><ins>fishing permit.</ins><img src="Images/external.png" height="2%" width="2%"></a></p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2003.3425809913883!2d19.28988804704018!3d-33.417199979574406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDI1JzAwLjgiUyAxOcKwMTcnMjYuOSJF!5e1!3m2!1sen!2s!4v1505671481421" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+            <div class="fishing">
+              <h3 id="EC"><a href="http://www.capenature.co.za/reserves/limietberg-nature-reserve/" title="Fishing" target="_new">Eastern Cape</a></h3>
+              <p>The Gariep Dam (formerly known as the Hendrik Verwoerd Dam) forms the largest storage reservoir in South Africa. With a variety of Carp, Kurper, Bass and Barbel</p>
+              <p> For information please see <a href=" 	http://www.gariepdam.com" title="Fishing" target="_new"><ins>Gariepdam.</ins><img src="Images/external.png" height="2%" width="2%"></a></p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54950.23910058418!2d25.466129585970666!3d-30.594762661351915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e860513c709f487%3A0x54b6597f3c17ea61!2sGariepdam%2C+9922%2C+South+Africa!5e0!3m2!1sen!2sza!4v1505675017103" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div id="Activities">
+            <h2 id="Hiking">Hiking</h2>
+            <div class="hiking">
+              <h3 id="RFAFT"><a href="http://www.capenature.co.za/reserves/limietberg-nature-reserve/" title="Hike" target="_new">Right Face - Arrow Face Traverse</a></h3>
+              <p>Scrambles up near Right Face Union Ravine then heads up and traverses on scrambling ledges and interesting  hidden passages across the most steep Africa Amphitheatre Wall before emerging onto a walking ledge below Africa Ledge and joins the India Venster route to the top. This is a 3/4 hour exciting adventure for an experienced hiker .</p>
+              <br>
+              <p> For more information please see <a href="http://www.climbtablemountain.com/table-mountain-hiking-enquiry/" title="Hike" target="_new"><ins>Table Mountain Hikes.</ins><img src="Images/external.png" height="2%" width="2%"></a></p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6618.866511674817!2d18.403768144677276!3d-33.95570199020563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc6796be46e7b5%3A0xd216bc306feab576!2sContour+Path%2C+Table+Mountain+(Nature+Reserve)%2C+Cape+Town%2C+South+Africa!5e0!3m2!1sen!2s!4v1505693720611" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+            <div class="hiking">
+              <h3 id="TT"><a href="http://www.capenature.co.za/reserves/limietberg-nature-reserve/" title="Hike" target="_new">Tranquility tracks</a></h3>
+              <p>The Tranquility Cracks extend through this rocky area and are well worth exploring. There are several passages and stunning viewpoints to find, it can be fun squeezing through some of the smaller gaps in the rocks. There are several Yellowwood trees growing up from inside the cracks. Once you find your way through the cracks you’ll be rewarded with a stunning view of Camps Bay, Table Mountain and Lions Head. This hike is 3-5 hours depending on experience totalling 9km</p>
+              <p> For more information please see <a href="http://www.thetablemountainfund.org.za/looking-for-some-peace-and-quiet-look-for-tranquility-cracks/" title="Hike" target="_new"><ins>Tranquility tracks.</ins><img src="Images/external.png" height="2%" width="2%"></a></p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13233.967473324241!2d18.383013!3d-33.9798977!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfb4541faf72a5277!2sTranquillity+Cracks!5e0!3m2!1sen!2s!4v1505694647442" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+            <div class="hiking">
+              <h3 id="Witels"><a href="http://www.capenature.co.za/reserves/limietberg-nature-reserve/" title="Hike" target="_new">Witels</a></h3>
+              <p>Witels is a wonderful Kloofing trip between Worcester and Ceres. The best time of year to do this hike is between November and February. Winter is not recommended though if you like to ski then hiking up to Hoare Hut would be a must. This is a UCT owned hut so book in advance. Permits for Witels can be obtained, as well, from the UCT Mountain Club. It is not for the faint hearted or for those who don't like swimming, as swimming is compulsory at some points during the kloofing trip</p>
+              <br>
+              <p> For more information please see <a href="http://mountainandski.sports.uct.ac.za/" title="Hike" target="_new"><ins>UCT Mountain & Ski Club</ins><img src="Images/external.png" height="2%" width="2%"></a></p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2003.3425809913883!2d19.28988804704018!3d-33.417199979574406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDI1JzAwLjgiUyAxOcKwMTcnMjYuOSJF!5e1!3m2!1sen!2s!4v1505671481421" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen>
+              </iframe>
+            </div>
+
+            <div class="hiking">
+              <h3 id="Alphen"><a href="http://www.capenature.co.za/reserves/limietberg-nature-reserve/" title="Hike" target="_new"></a>Alphen Trail</h3>
+              <p>The Alphen Trail is possibly one of the most popular of the green belt walks of the Constantia Valley. The trail winds along the Diep River to the Constantiaberg Mountain and in places allows one to walk on either side of the river, with a number of bridge crossings. It’s a beautiful walk filled with lush grass, trees, beautiful skies and the Le Sueur Meadow on the far end of the walk towards Hohenort.<br> It is a 1 hour beginners walk.</p>
+              <br>
+              <p> For more information please see <a href="http://www.capetownmagazine.com/de-hel" title="Hike" target="_new"><ins>Constantia green belt walks.</ins><img src="Images/external.png" height="2%" width="2%"></a></p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.27636456028!2d18.448002584278242!3d-34.01111638970782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1220e62d15394b7d!2sAlphen+Trail!5e0!3m2!1sen!2s!4v1505700353942" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div id="Activities">
+            <h2 id="RockC">Rock Climbing</h2>
+            <div class="rc">
+              <h3 id="Silvermine"><a href="http://www.capenature.co.za/reserves/limietberg-nature-reserve/" title="RockC" target="_new">Silvermine</a></h3>
+              <p>Silvermine is probably the most popular climbing area on the Cape Peninsula with short walk-ins, good rock quality and many excellent routes. The Lower Silvermine Crag has easy routes and is perfect for beginners, Blaze of Glory is a little harder, Silvermine Main Crag is a good all round crag and Fawlty Towers for some harder stuff.<br><br> <b>Entry Times</b><br> 07:00 - 18:00 Summer (October - March) Exit at 19:00<br> 08:00 - 17:00 Winter (April - September) Exit at 18:00 <br><br><ins>Activities after hours / Late exit: R500 fine</ins><br><br> <b>Entry Fee</b> <br> Adult day entry &nbsp; R50 <br> Child day entry &nbsp; R25
+              </p>
+              <br>
+              <p> For more information please see <a href="https://www.sanparks.org/parks/table_mountain/tourism/tariffs.php" title="RockC" target="_new"><ins>SAN Parks.</ins><img src="Images/external.png" height="2%" width="2%"></a></p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52864.21889171814!2d18.388165955033955!3d-34.09478998203675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc6a76e81b1011%3A0xaf5a37f1d67ecca!2sSilver+Mine+(Nature+Reserve)%2C+Cape+Town%2C+South+Africa!5e0!3m2!1sen!2s!4v1505698599538" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+            <div class="rc">
+              <h3 id="Rocklands"><a href="http://www.capenature.co.za/reserves/limietberg-nature-reserve/" title="RockC" target="_new">Rocklands</a></h3>
+              <p>Rocklands is found in the Cederberg mountains it is a very beautiful area in a semi-desert setting, very isolated and very safe. Rocklands is undoubtedly famous for it's world class bouldering but this should not deter you from sampling the fine sport climbing. There is a large variety of quality climbing of all grades in both bouldering and sport climbing. Most of the original climbing is situated on CapeNature land and thus day or week permits must be obtained. Permits for bouldering are not covered by Wild Cards.<br>Bouldering/Rock climbing is allowed at the Kliphuis campsite area on condition you stay at CapeNature premises.
+              </p>
+              <br>
+              <p> For permit information please see <a href="http://www.capenature.co.za/reserves/cederberg-wilderness-area/?activity&activity_name=rock-climbing-bouldering" title="RockC" target="_new"><ins>Rock Climbing and Bouldering.</ins><img src="Images/external.png" height="2%" width="2%"></a></p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d862770.7173749028!2d18.342833964423615!3d-32.360230515678886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9b8c5afaeba5ef81!2sCederberg+Wilderness+Area!5e0!3m2!1sen!2s!4v1505697600242" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+            <div class="rc">
+              <h3 id="Montagu"><a href="http://www.capenature.co.za/reserves/limietberg-nature-reserve/" title="RockC" target="_new">Montagu</a></h3>
+              <p>Montagu is recognised as one of the most outstanding climbing destinations in South Africa due to the quality and number of climbing routes available. Montagu’s rock walls offer a wide variety of climbing opportunities at every level from beginner to expert.</p>
+              <br>
+              <p> For more information please see <a href="http://www.climbing.co.za/wiki/Montagu" title="RockC" target="_new"><ins>Montagu Hiking Routes.</ins><img src="Images/external.png" height="2%" width="2%"></a></p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106114.32467899131!2d20.040013565970977!3d-33.784622136453144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDQ3JzA1LjUiUyAyMMKwMDYnNTkuOCJF!5e0!3m2!1sen!2s!4v1505696133295" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+<!-- End of Activities -->
+
+<!-- Start of Aside with jumplinks to Activities -->
+      <div class="Extra">
+          <div id="side">
+            <h2 id="Camping">Camping</h2>
+              <p><a href="#TweedeTol" title="Camping" target="_self">Tweede Tol Campsite</a></p>
+          </div>
+
+          <div id="side">
+            <h2 id="Fishing">Fishing</h2>
+              <p><a href="#Tulbagh" title="Fishing" target="_self">Tulbagh</a></p>
+              <p><a href="#EC" title="Fishing" target="_self">Eastern Cape</a></p>
+          </div>
+
+          <div id="side">
+            <h2 id="Hiking">Hiking</h2>
+            <p><a href="#RFAFT" title="Hiking" target="_self">Right face arrow face traverse</a></p>
+            <p><a href="#TT" title="Hiking" target="_self">Tranquility tracks</a></p>
+            <p><a href="#Witels" title="Hiking" target="_self">Witels</a></p>
+            <p><a href="#Alphen" title="Hiking" target="_self">Alphen Trial</a></p>
+          </div>
+
+          <div id="side">
+            <h2 id="RockC">Rock Climbing</h2>
+            <p><a href="#Silvermine" title="RC" target="_self">Silvermine</a></p>
+            <p><a href="#Rocklands" title="RC" target="_self">Rocklands</a></p>
+            <p><a href="#Montagu" title="RC" target="_self">Montagu</a></p>
+          </div>
+        </div>
+<!-- End of Aside -->
+    </div>
+<!-- End of Main div -->
+
+<!-- Start of Footer with Social icons and copywrite -->
+        <footer>
+          <p style="float:Right">Megan Meyer &copy; Sep 2017</p>
+          <a href="#" title="Facebook" target="_blank"><img src="Images/FHex.png" height="40px" width="40px" style="float:left;"></a>
+          <a href="#" title="Twitter" target="_blank"><img src="Images/THex.png" height="40px" width="40px" style="float:left;"></a>
+          <a href="#Grid" title="Facebook" target="_self" style="margin-left:45%" style="float:left;">TOP</a>
+        </footer>
+<!-- End of footer -->
+    </div>
+<!-- End of grid -->
+
+</body>
+<!-- Body End -->
+</html>
+<!-- html End -->

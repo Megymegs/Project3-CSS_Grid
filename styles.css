@@ -1,0 +1,202 @@
+/*Start of CSS*/
+
+html {
+
+}
+
+#Grid {
+  display: grid;
+  grid-gap: 1vw;
+  max-height: 100%;
+  width: 100%;
+}
+
+body{
+  margin: 5px;
+  max-height: 800px;
+}
+
+
+.Navbar {
+	letter-spacing: 1.2px;
+	grid-column-start: 1;
+	grid-column-end: 12;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	display: grid;
+}
+
+h1 {
+	text-align:center;
+	font-size:64px;
+	margin:0px;
+	color:white;
+	text-outline: groove 1px grey;
+	word-spacing:2px;
+}
+
+.Top {
+	grid-column-start: 1;
+	grid-column-end:12;
+	grid-row-start:1;
+	grid-row-end:8;
+	background-size:100% 100%;
+	background-image:url(Images/Header.jpeg);
+	padding:1%;
+}
+
+.NavbarInfo1 {
+  display: table;
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 12;
+  grid-row-start: 8;
+  grid-row-end: 10;
+  padding: 0px;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0%;
+  background-color: lightblue;
+  }
+
+.NavbarInfo2 {
+    width: 100%;
+    max-height: 100%;
+    grid-column-start: 1;
+    grid-column-end: 12;
+    grid-row-start: 10;
+    grid-row-end: 12;
+    padding: 0px;
+    margin: 0%;
+    }
+
+.Navbar li {
+  display: table-cell;
+  width: 25%;
+  text-align: center;
+  border: 2px groove lightgrey;
+}
+
+li.Navbar a {
+			color: white:
+}
+/*<--Nav style End*/
+
+/* list anchor no decoration*/
+li a {
+      text-decoration: none;
+      color: black;
+      display: block;
+      }
+
+/* mouse over link */
+li:hover:not(.active) {
+                         background-color: grey;
+                         cursor: pointer;
+                         box-shadow: 1px 1px 0px 0px black inset, 0px 0px 2px 2px grey inset;
+                         text-decoration: underline;
+                        }
+
+/* mouse over link */
+li:hover a {
+            color: White;
+            font-style: italic;
+            }
+
+.active {
+         background-color: teal;
+        }
+
+.Main {
+  grid-row-start: 4;
+  grid-row-end: 10;
+  grid-column-start: 1;
+  grid-column-end: 12;
+  display: grid;
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 0.5%;
+  min-width: 100%;
+  grid-template-columns: 10fr 2fr;
+    grid-template-areas:
+      "Activities Extra"
+  }
+}
+
+.photo {
+  box-sizing: content-box;
+  max-width: 49.5%;
+}
+
+h2 {
+  margin-top:1%;
+  margin-bottom: 0px;
+  text-align: center;
+  letter-spacing: 1.2px;
+  font-weight: bolder;
+}
+
+.Activities {
+	grid-column-start: 1;
+	grid-column-end: 9;
+	grid-row-start: 1;
+	grid-row-end: 12;
+	background-color: lightgrey;
+	display: block;
+	align-content: center;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	position: absolute;
+	top: 1px;
+	max-height: 100%;
+  width: 850px;
+  }
+
+#Activities {
+	margin-right:0px;
+	text-align: center;
+	border-bottom:1px solid black;
+	overflow:auto;
+	}
+
+.fishing {
+	float:left;
+	margin:0.3%;
+	}
+
+.hiking {
+	float:left;
+	margin:0.4%;
+}
+
+.rc {
+	float:left;
+	margin:0.5%;
+}
+
+.Extra {
+	grid-row-start: 1;
+	grid-row-end: 12;
+	grid-column: 11/12;
+	border: 1px solid grey;
+	background-color: lightgrey;
+  width: 400px;
+}
+
+
+#side {
+	  width: 100%;
+    margin-right: 0px;
+    text-align: center;
+	  }
+
+footer {
+  grid-row-start: 11;
+  grid-row-end: 12;
+  grid-column-start: 1;
+  grid-column-end: 12;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  padding: 0.5%;
+  width: 99%;
+}
